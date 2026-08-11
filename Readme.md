@@ -1,74 +1,105 @@
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile/assets/wortbildmarke-negativ.png">
-  <img src="profile/assets/wortbildmarke.png" alt="Beck+Heun" width="260">
-</picture>
-
-<br><br>
-
-# GitHub-Profilseite der Beck+Heun GmbH
-
+  <img src="assets/img/logo-claim.png" alt="Beck+Heun – Beste Werte fürs Haus" width="320">
 </div>
 
-Dieses Repository enthält die öffentliche Profilseite der GitHub-Organisation
-**Beck-Heun-GmbH** sowie die dafür benötigten Markendateien.
+# Website der Beck+Heun GmbH
 
-| Datei | Zweck |
-|---|---|
-| [`profile/README.md`](profile/README.md) | Die Profilseite – wird auf der Organisationsseite angezeigt |
-| [`profile/brand.md`](profile/brand.md) | Corporate Design kompakt: Logo, Farben, Typografie, Piktogramme |
-| `profile/assets/` | Logo-Varianten (RGB, positiv und negativ), Farbfelder, Markenband |
+Statische Website, versioniert in Git und über GitHub Pages veröffentlicht.
+Kein Build, kein Framework, keine externen Abhängigkeiten – reines HTML, CSS und
+etwas JavaScript. Jede Änderung ist ein Commit.
 
-## Damit die Profilseite erscheint
+## Struktur
 
-GitHub zeigt eine Organisations-Profilseite nur an, wenn zwei Bedingungen erfüllt
-sind. Beides muss noch eingerichtet werden:
+```
+index.html              Startseite (alle Inhalte)
+404.html                Fehlerseite
+assets/css/style.css    Gestaltung, Design-Tokens am Dateianfang
+assets/js/site.js       Kleinigkeiten: aktive Navigation, Jahr im Footer
+assets/img/             Logo-Varianten (RGB, positiv und negativ)
+.nojekyll               schaltet die Jekyll-Verarbeitung auf GitHub Pages ab
+```
 
-1. **Das Repository muss `.github` heißen.**
-   Aktuell heißt es `Beck-Heun-GmbH`. Ein Repository, das wie die Organisation
-   heißt, wird von GitHub *nicht* als Profil-Repository erkannt – das gilt nur
-   für persönliche Konten. Umbenennen unter *Settings → General → Repository name*
-   auf `.github`.
+## Lokal ansehen
 
-2. **Das Repository muss öffentlich sein.**
-   Aktuell ist es privat, damit bleibt die Profilseite unsichtbar. Umstellen
-   unter *Settings → General → Danger Zone → Change repository visibility*.
+```bash
+python3 -m http.server 8000
+# danach http://localhost:8000 im Browser öffnen
+```
 
-Danach ist die Seite unter <https://github.com/Beck-Heun-GmbH> zu sehen.
+Ein einfacher Doppelklick auf `index.html` funktioniert auch, der lokale Server
+entspricht aber dem späteren Verhalten auf GitHub Pages.
 
-> **Vor dem Öffentlichmachen prüfen:** Alles in diesem Repository wird damit
-> dauerhaft öffentlich – auch die Historie. Enthalten sind bewusst nur die
-> Web-Logos (RGB) und die Farb- und Schriftangaben aus dem Corporate Design
-> Manual. Druckdaten (EPS, TIFF, CMYK/HKS/RAL) und das Manual selbst liegen
-> nicht hier. Personen- und Kundendaten enthält das Repository nicht; das soll
-> so bleiben.
+## Veröffentlichen
 
-## Noch zu ergänzen
+*Settings → Pages → Build and deployment*: Source `Deploy from a branch`,
+Branch `main`, Ordner `/ (root)`. Nach dem ersten Deployment liegt die Seite
+unter `https://beck-heun-gmbh.github.io/Beck-Heun-GmbH/`.
 
-In [`profile/README.md`](profile/README.md) stehen an drei Stellen
-`TODO`-Kommentare (im gerenderten Text unsichtbar):
+Zwei Dinge sind dabei zu beachten:
 
-- die Unternehmensbeschreibung gegen die aktuelle Darstellung auf beck-heun.de abgleichen,
-- die Themen-/Projekttabellen an die real geplanten Inhalte anpassen,
-- ein funktionsbezogenes Kontaktpostfach eintragen, falls vorhanden.
+- **Sichtbarkeit:** GitHub Pages aus einem *privaten* Repository ist nur in
+  kostenpflichtigen Plänen (Pro, Team, Enterprise) verfügbar und die Seite ist
+  dann nur für Mitglieder mit Zugriff erreichbar. Für eine öffentlich
+  erreichbare Seite muss das Repository öffentlich sein.
+- **Eigene Domain:** Für eine Adresse wie `www.beck-heun.de` oder
+  `neu.beck-heun.de` eine Datei `CNAME` mit genau dieser Domain im
+  Wurzelverzeichnis anlegen und den DNS-Eintrag beim Provider setzen
+  (*Settings → Pages → Custom domain*).
 
-## Organisationsprofil abrunden
+> **Pflichtangaben:** Sobald die Seite öffentlich erreichbar ist, braucht sie
+> ein Impressum und eine Datenschutzerklärung. Im Footer sind die Links
+> angelegt, sie zeigen bisher auf `beck-heun.de` – bitte auf die richtigen
+> Zielseiten setzen oder eigene Seiten im Repository ergänzen.
 
-Ergänzend zur Seite selbst – jeweils unter *Organization settings → Profile*:
+## Inhalte pflegen
 
-- **Avatar:** `profile/assets/fuchskopf.png`. Der Fuchskopf ist im Corporate
-  Design genau für Avatare, Favicons und App-Icons vorgesehen.
-- **Description:** `Systemlösungen für den Fensteranschluss. Beste Werte fürs Haus.`
-- **URL:** `https://www.beck-heun.de`
-- **Location:** `Mengerskirchen, Deutschland`
+Alle Texte stehen direkt in `index.html`. An den Stellen, an denen
+Unternehmensangaben noch geprüft oder ergänzt werden müssen, steht im Quelltext
+ein Kommentar `<!-- INHALT PRÜFEN: … -->`:
 
-## Änderungen
+```bash
+grep -n "INHALT PRÜFEN" index.html
+```
 
-Die Seite ist reines Markdown mit etwas HTML für Layout und Dark-Mode-Logos
-(`<picture>` mit `prefers-color-scheme`). Änderungen an `profile/README.md`
-sind nach dem Merge nach `main` sofort auf der Profilseite sichtbar – ein
-Vorschau-Schritt ist nicht vorgesehen, deshalb lohnt der Blick in die
-Dateivorschau des Pull Requests.
+Betroffen sind: der Unternehmensabsatz, die Produktkategorien, mögliche
+Kennwerte bei der Energieeffizienz, die Ziel-URLs im Servicebereich, die
+zentralen Kontaktdaten sowie Impressum und Datenschutz.
 
-Bei Fragen zur Marke: Marketing / Corporate Communications.
+Produktnamen und Kennzahlen sind bewusst **nicht** eingesetzt, solange sie nicht
+belegt sind – dort stehen Kategorien statt erfundener Bezeichnungen.
+
+## Gestaltung
+
+Die Seite folgt dem Corporate Design Manual (Stand 01/2020). Die Farbwerte
+liegen als CSS-Variablen am Anfang von `assets/css/style.css`:
+
+| Variable | Wert | Einsatz |
+|---|---|---|
+| `--bh-gruen` | `#BCD5BF` | Primärfarbe, große Flächen |
+| `--bh-hellgruen` | `#EBF5EC` | Primärfarbe, ruhige Flächen |
+| `--bh-grau` | `#394348` | Text, Piktogramme, Buttons |
+| `--bh-rot` | `#CD1719` | nur Wortbildmarke |
+| `--bh-blau` | `#004D9D` | nur Wortbildmarke, Fokusrahmen |
+
+Die kantigen Flächen im Hero setzen das Designkonzept um: alle Flächen sind um
+denselben Winkel geschert, ihre Kanten laufen deshalb parallel und folgen einer
+gemeinsamen Fluchtrichtung.
+
+**Hausschrift:** Die Klint Pro ist nicht als Webfont eingebunden – dafür ist
+eine Webfont-Lizenz nötig. Aktuell greift ein Systemschrift-Stack mit Calibri
+an erster Stelle. Sobald die Lizenz vorliegt: die `woff2`-Dateien nach
+`assets/fonts/` legen und die `@font-face`-Blöcke in `style.css` aktivieren –
+mehr ist nicht zu tun.
+
+**Piktogramme:** Die Icons in den Produktkarten sind Platzhalter im Beck+Heun
+Grau. Die offiziellen Piktogramme stellt das Marketing bereit.
+
+## Technisches
+
+- Responsiv ab 320 px, Navigation unter 900 px als Menü (funktioniert ohne JavaScript).
+- Ohne JavaScript sind alle Inhalte und die Navigation vollständig nutzbar.
+- Zugänglichkeit: Sprungmarke zum Inhalt, sichtbare Fokusrahmen, Textkontraste
+  mindestens 6:1, `prefers-reduced-motion` wird berücksichtigt.
+- Keine externen Ressourcen: keine CDNs, keine Fonts von Dritten, keine Tracker
+  – dadurch entfällt auch die Cookie-Frage.
+- Eine Druckversion ist in `style.css` hinterlegt.
