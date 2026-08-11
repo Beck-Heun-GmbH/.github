@@ -16,9 +16,7 @@
 <!-- INHALT PRÜFEN: Falls weitere Produktbereiche genannt werden sollen, hier
      ergänzen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
 
-Beck+Heun entwickelt und produziert Rollladenkästen – dort, wo Fenster und
-Mauerwerk aufeinandertreffen und über Wärmeschutz, Schallschutz und
-Luftdichtheit entschieden wird.
+Beck+Heun entwickelt und produziert Rollladenkästen.
 
 Hier auf GitHub bündeln wir, was rund um unsere Produkte digital entsteht.
 
