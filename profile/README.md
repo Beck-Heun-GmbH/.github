@@ -7,14 +7,16 @@
 
 <br><br>
 
-**Rollläden.** Aus Mengerskirchen.
+**Rollladenkästen.** Aus Mengerskirchen.
 
 </div>
 
 <br>
 
-<!-- INHALT PRÜFEN: Absatz gegen die Unternehmensdarstellung auf beck-heun.de
-     abgleichen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
+<!-- INHALT PRÜFEN: Falls weitere Produktbereiche genannt werden sollen, hier
+     ergänzen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
+
+Beck+Heun entwickelt und produziert Rollladenkästen.
 
 Hier auf GitHub bündeln wir, was rund um unsere Produkte digital entsteht.
 
