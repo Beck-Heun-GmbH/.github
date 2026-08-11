@@ -7,20 +7,29 @@
 
 <br><br>
 
-**Rollladenkästen.** Aus Mengerskirchen.
+<a href="https://www.instagram.com/beckundheun/">
+  <img src="assets/instagram.svg" alt="Instagram" width="48">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://de-de.facebook.com/Beck.Heun">
+  <img src="assets/facebook.svg" alt="Facebook" width="48">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://de.linkedin.com/company/beck-heun-gmbh">
+  <img src="assets/linkedin.svg" alt="LinkedIn" width="48">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://x.com/beckheungmbh">
+  <img src="assets/twitter-x.svg" alt="X" width="48">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCswAjnlx9YgeRYpGoBeztiA/videos">
+  <img src="assets/youtube.svg" alt="YouTube" width="48">
+</a>
 
-</div>
-
-<br>
-
-<!-- INHALT PRÜFEN: Absatz gegen die Unternehmensdarstellung auf beck-heun.de
-     abgleichen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
-
-Beck+Heun entwickelt und produziert Rollladenkästen.
-
-Hier auf GitHub bündeln wir, was rund um unsere Produkte digital entsteht.
-
-<br>
+<br><br>
 
 **Beck+Heun GmbH** · Reinhold-Beck-Straße 2 · 35794 Mengerskirchen ·
 [beck-heun.de](https://www.beck-heun.de)
+
+</div>
