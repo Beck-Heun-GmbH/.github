@@ -7,18 +7,18 @@
 
 <br><br>
 
-**Systemlösungen für den Fensteranschluss.** Aus Mengerskirchen.
+**Rollladenkästen.** Aus Mengerskirchen.
 
 </div>
 
 <br>
 
-<!-- INHALT PRÜFEN: Absatz gegen die Unternehmensdarstellung auf beck-heun.de
-     abgleichen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
+<!-- INHALT PRÜFEN: Falls weitere Produktbereiche genannt werden sollen, hier
+     ergänzen. Bewusst ohne Gründungsjahr und Mitarbeiterzahl. -->
 
-Beck+Heun entwickelt und produziert Systemlösungen rund um den Fensteranschluss:
-von Rollladen- und Raffstorekästen über Dämm- und Anschlusssysteme bis zum
-Zubehör für die energetische Sanierung.
+Beck+Heun entwickelt und produziert Rollladenkästen – dort, wo Fenster und
+Mauerwerk aufeinandertreffen und über Wärmeschutz, Schallschutz und
+Luftdichtheit entschieden wird.
 
 Hier auf GitHub bündeln wir, was rund um unsere Produkte digital entsteht.
 

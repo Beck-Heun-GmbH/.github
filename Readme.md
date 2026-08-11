@@ -24,6 +24,6 @@ Danach ist die Seite unter <https://github.com/Beck-Heun-GmbH> zu sehen.
 
 - **Org-Avatar:** `profile/assets/fuchskopf.png` — der Fuchskopf ist im
   Corporate Design für Avatare, Favicons und App-Icons vorgesehen.
-- **Description:** `Systemlösungen für den Fensteranschluss. Beste Werte fürs Haus.`
-- Im Text steht ein Kommentar `INHALT PRÜFEN`: der Unternehmensabsatz sollte
-  gegen die Darstellung auf beck-heun.de abgeglichen werden.
+- **Description:** `Rollladenkästen aus Mengerskirchen. Beste Werte fürs Haus.`
+- Im Text steht ein Kommentar `INHALT PRÜFEN`: dort können weitere
+  Produktbereiche ergänzt werden, falls sie genannt werden sollen.
