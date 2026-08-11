@@ -1,8 +1,5 @@
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-claim-negativ.png">
-  <img src="assets/logo-claim.png" alt="Beck+Heun – Beste Werte fürs Haus" width="400">
-</picture>
+<a href="https://www.beck-heun.de/"><img src="assets/logo-claim.png" alt="Beck+Heun – Beste Werte fürs Haus" width="400"></a>
 <br><br>
 <a href="https://www.instagram.com/beckundheun/"><img src="assets/instagram.svg" alt="Instagram" width="48"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
