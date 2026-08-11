@@ -1,4 +1,3 @@
-# GitHub-Profilseite der Beck+Heun GmbH
 
 Die Profilseite liegt in [`profile/README.md`](profile/README.md), die Logos in
 `profile/assets/`. Das Logo wechselt automatisch auf die Negativ-Variante, wenn
